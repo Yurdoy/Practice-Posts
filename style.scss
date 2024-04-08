@@ -8,7 +8,7 @@
 $btnSize: 50px;
 
 %btn {
-    background-color: #ccc;
+    background-color: #c6cbf0;
     border: none;
     height: $btnSize;
     font-size: 24px;
@@ -22,7 +22,7 @@ $btnSize: 50px;
         transform: translateY(1px);
     }
     &:hover {
-        background-color: #ddd;
+        background-color: #a8afe1;
     }
     &:disabled {
         background-color: #ddd;
@@ -51,9 +51,30 @@ $btnSize: 50px;
     background-color: #cbf1c4;
 
     h1 {
-        margin-bottom: 20px;
         line-height: 100%;
         font-size: 26px;
+        margin-bottom: 20px;
     }
+}
+
+.error {
+    background-color: #ebcccc;
+    color: #9a1010;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: -20px;
+}
+@keyframes rotate {
+    form { transform: rotate(0); }
+    to { transform: rotate(360); }
+}
+.loader {
+    text-align: center;
+    padding: 20px;
+}
+.loader-icon {
+    animation: spin 1.4s infinite linear;
+    font-size: 40px;
 }
 /*# sourceMappingURL=style.scss.map */
